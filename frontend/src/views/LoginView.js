@@ -1,4 +1,12 @@
-import { Form, Col, Row, Container, Button, Card } from 'react-bootstrap';
+import {
+  Form,
+  Col,
+  Row,
+  Container,
+  Button,
+  Card,
+  Image,
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import CourseyCarousel from '../components/CourseyCarousel';
@@ -10,8 +18,17 @@ const LoginView = (props) => {
   };
   return (
     <Container>
-      <Row className='text-center'>
-        <h1>Coursey - Find cool KTH courses</h1>
+      <Row style={{ marginTop: -30 }} className='text-center'>
+        <h1>
+          <Image
+            style={{ width: 80, height: 80 }}
+            src={'/assets/coursey.png'}
+            alt={'coursey-logo'}
+            loading='lazy'
+            fluid
+          />
+          - Find cool KTH courses
+        </h1>
       </Row>
       <Row>
         <Col>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Image } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
@@ -52,7 +52,16 @@ const NavigationBar = () => {
         className='px-3'>
         <>
           <LinkContainer to={'/'}>
-            <Navbar.Brand>Coursey</Navbar.Brand>
+            <Navbar.Brand>
+              <Image
+                style={{ width: 60, height: 60 }}
+                src={'/assets/coursey.png'}
+                alt={'coursey-logo'}
+                loading='lazy'
+                fluid
+              />
+              - Coursey
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse className='justify-content-end'>

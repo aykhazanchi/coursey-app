@@ -13,6 +13,7 @@ const CourseyCarousel = (props) => {
             style={{ width: 600, height: 400 }}
             src={`/assets/carousel1.jpg`}
             alt={'Coursey'}
+            loading='lazy'
             fluid
           />
           <Carousel.Caption
@@ -40,6 +41,7 @@ const CourseyCarousel = (props) => {
             className='d-block w-100'
             src={`/assets/carousel2.jpeg`}
             alt={'Coursey'}
+            loading='lazy'
             fluid
           />
           <Carousel.Caption
@@ -96,6 +98,7 @@ const CourseyCarousel = (props) => {
             style={{ width: 600, height: 400 }}
             src={`/assets/carousel3.jpeg`}
             alt={'Coursey'}
+            loading='lazy'
             fluid
           />
           <Carousel.Caption className='carousel-caption'>
